@@ -1,0 +1,683 @@
+{
+  "8": {
+    "inputs": {
+      "samples": [
+        "111",
+        0
+      ],
+      "vae": [
+        "108",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "101": {
+    "inputs": {
+      "clip_name": "sigclip_vision_patch14_384.safetensors"
+    },
+    "class_type": "CLIPVisionLoader",
+    "_meta": {
+      "title": "Load CLIP Vision"
+    }
+  },
+  "102": {
+    "inputs": {
+      "crop": "none",
+      "clip_vision": [
+        "101",
+        0
+      ],
+      "image": [
+        "105",
+        0
+      ]
+    },
+    "class_type": "CLIPVisionEncode",
+    "_meta": {
+      "title": "CLIP Vision Encode"
+    }
+  },
+  "103": {
+    "inputs": {
+      "style_model_name": "FLUX.1-Redux-dev.safetensors"
+    },
+    "class_type": "StyleModelLoader",
+    "_meta": {
+      "title": "Load Style Model"
+    }
+  },
+  "105": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "upscale_method": "nearest-exact",
+      "keep_proportion": true,
+      "divisible_by": 2,
+      "crop": "disabled",
+      "image": [
+        "159",
+        0
+      ]
+    },
+    "class_type": "ImageResizeKJ",
+    "_meta": {
+      "title": "Resize Image"
+    }
+  },
+  "107": {
+    "inputs": {
+      "clip_name1": "SD35\\clip_l.safetensors",
+      "clip_name2": "t5xxl_fp8_e4m3fn.safetensors",
+      "type": "flux",
+      "device": "default"
+    },
+    "class_type": "DualCLIPLoader",
+    "_meta": {
+      "title": "DualCLIPLoader"
+    }
+  },
+  "108": {
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "Load VAE"
+    }
+  },
+  "111": {
+    "inputs": {
+      "seed": 116287767017606,
+      "steps": 8,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "126",
+        0
+      ],
+      "positive": [
+        "114",
+        0
+      ],
+      "negative": [
+        "114",
+        1
+      ],
+      "latent_image": [
+        "242",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "112": {
+    "inputs": {
+      "text": [
+        "295",
+        0
+      ],
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      },
+      "clip": [
+        "107",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Negative"
+    }
+  },
+  "114": {
+    "inputs": {
+      "positive": [
+        "120",
+        0
+      ],
+      "negative": [
+        "112",
+        0
+      ],
+      "vae": [
+        "108",
+        0
+      ],
+      "pixels": [
+        "198",
+        0
+      ]
+    },
+    "class_type": "InstructPixToPixConditioning",
+    "_meta": {
+      "title": "InstructPixToPixConditioning"
+    }
+  },
+  "120": {
+    "inputs": {
+      "guidance": 15,
+      "conditioning": [
+        "193",
+        0
+      ]
+    },
+    "class_type": "FluxGuidance",
+    "_meta": {
+      "title": "FluxGuidance"
+    }
+  },
+  "123": {
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "upscale_method": "nearest-exact",
+      "keep_proportion": true,
+      "divisible_by": 2,
+      "crop": "disabled",
+      "image": [
+        "144",
+        0
+      ]
+    },
+    "class_type": "ImageResizeKJ",
+    "_meta": {
+      "title": "Resize Image"
+    }
+  },
+  "124": {
+    "inputs": {
+      "text": [
+        "206",
+        0
+      ],
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      },
+      "clip": [
+        "107",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": {
+      "title": "Positive"
+    }
+  },
+  "126": {
+    "inputs": {
+      "unet_name": "flux1-depth-dev.safetensors",
+      "weight_dtype": "fp8_e4m3fn"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
+  },
+  "144": {
+    "inputs": {
+      "image": "Paint_109.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "input;实际场景图;order=1;custom_id=img_origin"
+    }
+  },
+  "159": {
+    "inputs": {
+      "image": "RestRoom_0002.jpg"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "input;风格参考图;order=1;custom_id=img_reference"
+    }
+  },
+  "182": {
+    "inputs": {
+      "caption_type": "Descriptive",
+      "caption_length": "long",
+      "low_vram": false,
+      "joy_two_pipeline": [
+        "183",
+        0
+      ],
+      "image": [
+        "123",
+        0
+      ]
+    },
+    "class_type": "Joy_caption_two",
+    "_meta": {
+      "title": "Joy Caption Two"
+    }
+  },
+  "183": {
+    "inputs": {
+      "model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+    },
+    "class_type": "Joy_caption_two_load",
+    "_meta": {
+      "title": "Joy Caption Two Load"
+    }
+  },
+  "193": {
+    "inputs": {
+      "strength": 0.6000000000000001,
+      "strength_type": "attn_bias",
+      "conditioning": [
+        "124",
+        0
+      ],
+      "style_model": [
+        "103",
+        0
+      ],
+      "clip_vision_output": [
+        "102",
+        0
+      ]
+    },
+    "class_type": "StyleModelApply",
+    "_meta": {
+      "title": "Apply Style Model"
+    }
+  },
+  "198": {
+    "inputs": {
+      "preprocessor": "DepthAnythingV2Preprocessor",
+      "resolution": 1024,
+      "image": [
+        "123",
+        0
+      ]
+    },
+    "class_type": "AIO_Preprocessor",
+    "_meta": {
+      "title": "AIO Aux Preprocessor"
+    }
+  },
+  "206": {
+    "inputs": {
+      "text_1": [
+        "275",
+        0
+      ],
+      "text_2": [
+        "274",
+        0
+      ],
+      "text_3": [
+        "287",
+        0
+      ],
+      "text_4": [
+        "288",
+        0
+      ]
+    },
+    "class_type": "LayerUtility: TextJoin",
+    "_meta": {
+      "title": "LayerUtility: TextJoin"
+    }
+  },
+  "208": {
+    "inputs": {
+      "text_input": "",
+      "task": "detailed_caption",
+      "fill_mask": true,
+      "keep_model_loaded": false,
+      "max_new_tokens": 1024,
+      "num_beams": 3,
+      "do_sample": false,
+      "output_mask_select": "sofa",
+      "seed": 631027687933001,
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      },
+      "image": [
+        "105",
+        0
+      ],
+      "florence2_model": [
+        "209",
+        0
+      ]
+    },
+    "class_type": "Florence2Run",
+    "_meta": {
+      "title": "Florence2Run"
+    }
+  },
+  "209": {
+    "inputs": {
+      "model": "Florence-2-Flux-Large",
+      "precision": "fp16",
+      "attention": "sdpa"
+    },
+    "class_type": "Florence2ModelLoader",
+    "_meta": {
+      "title": "Florence2ModelLoader"
+    }
+  },
+  "242": {
+    "inputs": {
+      "batch_size": 1,
+      "latent": [
+        "114",
+        2
+      ]
+    },
+    "class_type": "CR Latent Batch Size",
+    "_meta": {
+      "title": "⚙️ CR Latent Batch Size"
+    }
+  },
+  "274": {
+    "inputs": {
+      "from_translate": "chinese",
+      "to_translate": "english",
+      "text": [
+        "305",
+        0
+      ],
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      }
+    },
+    "class_type": "ArgosTranslateTextNode",
+    "_meta": {
+      "title": "Argos Translate Text Node"
+    }
+  },
+  "275": {
+    "inputs": {
+      "from_translate": "chinese",
+      "to_translate": "english",
+      "text": [
+        "307",
+        0
+      ],
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      }
+    },
+    "class_type": "ArgosTranslateTextNode",
+    "_meta": {
+      "title": "Argos Translate Text Node"
+    }
+  },
+  "279": {
+    "inputs": {
+      "images": [
+        "198",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "281": {
+    "inputs": {
+      "rgthree_comparer": {
+        "images": [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_hmtcm_00009_.png&type=temp&subfolder=&rand=0.29904124345145555"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_hmtcm_00010_.png&type=temp&subfolder=&rand=0.7847674074778364"
+          }
+        ]
+      },
+      "image_a": [
+        "8",
+        0
+      ],
+      "image_b": [
+        "123",
+        0
+      ]
+    },
+    "class_type": "Image Comparer (rgthree)",
+    "_meta": {
+      "title": "Image Comparer (rgthree)"
+    }
+  },
+  "287": {
+    "inputs": {
+      "text": [
+        "208",
+        2
+      ],
+      "text2": "The image shows a bathroom with a white bathtub and a walk-in shower in the middle of it. The walls are painted white and the floor is covered with black and white tiles. There are windows on the left and right sides of the bathtub, and a glass door in the center of the room. On the right side of the image, there is a toilet seat and a toilet paper roll on the wall. At the top of the bathroom, there are lights on the ceiling."
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "288": {
+    "inputs": {
+      "text": [
+        "182",
+        0
+      ],
+      "text2": "A photograph of a modest, well-lit bedroom with light pink walls and wooden flooring. The room features a wooden bed with a mauve duvet, two white pillows, and a grey blanket. To the left, a window with grey curtains offers a view of a cityscape. A wooden dresser with drawers stands to the right. A tall, white floor lamp is next to the dresser. The ceiling has a small, central light fixture. The room appears tidy but lived-in."
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "295": {
+    "inputs": {
+      "from_translate": "chinese",
+      "to_translate": "english",
+      "text": "文字，水印，低分辨率,\ntext, nsfw, watermark, ",
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      }
+    },
+    "class_type": "ArgosTranslateTextNode",
+    "_meta": {
+      "title": "Argos Translate Text Node"
+    }
+  },
+  "297": {
+    "inputs": {
+      "from_translate": "english",
+      "to_translate": "chinese",
+      "text": [
+        "182",
+        0
+      ],
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      }
+    },
+    "class_type": "ArgosTranslateTextNode",
+    "_meta": {
+      "title": "Argos Translate Text Node"
+    }
+  },
+  "298": {
+    "inputs": {
+      "text": [
+        "297",
+        0
+      ],
+      "text2": "一张平坦,光洁的卧室的照片,上面有浅粉色的墙壁和木制地板. 房间的特色是木质的床,配有毛绒哑弹,两个白色枕头,以及灰色的毯子. 左边的一扇有灰色窗帘的窗户提供了城市景观的景观. 一个带有抽屉的木制梳妆台站在右边. 一个高大的白色地板灯在梳妆台旁边. 天花板有一个小的,中央的灯塔。 房间看起来很干净,但住在里面。"
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "302": {
+    "inputs": {
+      "from_translate": "english",
+      "to_translate": "chinese",
+      "text": [
+        "208",
+        2
+      ],
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      }
+    },
+    "class_type": "ArgosTranslateTextNode",
+    "_meta": {
+      "title": "Argos Translate Text Node"
+    }
+  },
+  "303": {
+    "inputs": {
+      "text": [
+        "302",
+        0
+      ],
+      "text2": "画面显示一个带有白色浴缸的洗手间,中间还有散步淋浴. 墙壁为白色,地板上铺有黑白瓦片. 浴缸左右两侧有窗户,房间中央有玻璃门. 图像的右侧,墙上有厕所座椅和卫生纸卷. 在浴室的顶部,天花板上有灯光."
+    },
+    "class_type": "ShowText|pysssss",
+    "_meta": {
+      "title": "Show Text 🐍"
+    }
+  },
+  "304": {
+    "inputs": {
+      "images": [
+        "105",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "305": {
+    "inputs": {
+      "text": "客厅，左边放置真皮沙发，右边墙角处摆放一套餐桌，",
+      "display_name": "补充描述词",
+      "optional": false,
+      "advanced": false,
+      "order": 10,
+      "custom_id": "positive_1",
+      "hidden": false,
+      "translatable": false,
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      }
+    },
+    "class_type": "VixUiPrompt",
+    "_meta": {
+      "title": "VixUI-Prompt"
+    }
+  },
+  "307": {
+    "inputs": {
+      "default_value": "新中式风格",
+      "possible_values": "[\"现代简约风格\", \"北欧风格\", \"工业风格\", \"中式风格\", \"新中式风格\", \"日式风格\", \"美式风格\", \"欧式风格\", \"古典欧式风格\", \"简欧风格\", \"法式风格\", \"地中海风格\", \"田园风格\", \"混搭风格\"]",
+      "display_name": "Dropdown list",
+      "optional": true,
+      "advanced": true,
+      "order": 5,
+      "custom_id": "",
+      "hidden": false,
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      }
+    },
+    "class_type": "VixUiList",
+    "_meta": {
+      "title": "VixUI-List"
+    }
+  },
+  "308": {
+    "inputs": {
+      "name": "interor_design_2",
+      "display_name": "室内设计风格参考",
+      "description": "",
+      "author": "xuzhong",
+      "homepage": "",
+      "documentation": "",
+      "license": "Apache 3.0",
+      "tags": "[\"室内设计\"]",
+      "version": "1.2504.1101",
+      "requires": "[]",
+      "is_seed_supported": true,
+      "is_count_supported": false,
+      "is_translations_supported": false,
+      "is_macos_supported": true,
+      "required_memory_gb": 0,
+      "hidden": false,
+      "remote_vae": false,
+      "speak_and_recognation": {
+        "__value__": [
+          false,
+          true
+        ]
+      }
+    },
+    "class_type": "VixUiWorkflowMetadata",
+    "_meta": {
+      "title": "VixUI-WorkflowMetadata"
+    }
+  },
+  "309": {
+    "inputs": {
+      "filename_prefix": "ComfyUI",
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  }
+}
