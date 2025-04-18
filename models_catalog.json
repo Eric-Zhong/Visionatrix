@@ -1671,7 +1671,47 @@
       }
     ],
     "create_by": "DragonAI.vip"
+  },
+
+
+  "FLUX.1-dev-IP-Adapter": {
+    "homepage": "https://hf-mirror.com/InstantX/FLUX.1-dev-IP-Adapter",
+    "url": "https://hf-mirror.com/InstantX/FLUX.1-dev-IP-Adapter/resolve/main/ip-adapter.bin",
+    "filename": "ip-adapter.bin",
+    "hash": "01aaeb0dace9ea4feee1007d30e41c59847041c116db8c2bcc14f9c91d491203",
+    "file_size": 5680094248,
+    "types": [
+      "ipadapter"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter\\.bin$"
+      }
+    ],
+    "create_by": "DragonAI.vip"
+  },
+
+
+
+
+
+  "realisticVisionV51_v51VAE": {
+    "homepage": "https://hf-mirror.com/krnl/realisticVisionV51_v51VAE",
+    "url": "https://hf-mirror.com/krnl/realisticVisionV51_v51VAE/resolve/main/realisticVisionV51_v51VAE.safetensors",
+    "filename": "realisticVisionV51_v51VAE.safetensors",
+    "hash": "ef76aa2332635f4352463343beec9c5aae3bd107a73c0fd7221abbbcf8bd5470",
+    "file_size": 4270000000,
+    "types": [
+      "checkpoints"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?realisticVisionV51_v51VAE\\.safetensors$"
+      }
+    ],
+    "create_by": "DragonAI.vip"
   }
+
 
 
 }

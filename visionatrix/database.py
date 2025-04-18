@@ -1,3 +1,4 @@
+import asyncio
 import importlib.resources
 import logging
 import os
@@ -25,6 +26,11 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 
 from . import options, pydantic_models
+
+# 仅在 Windows 系统上设置事件循环策略
+import platform
+if platform.system() == 'Windows':
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 LOGGER = logging.getLogger("visionatrix")
 SESSION: async_sessionmaker | None = None
