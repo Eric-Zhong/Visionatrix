@@ -507,6 +507,8 @@ def flow_prepare_output_params(
             "MathExpression|pysssss",
             "PreviewImage",
             "Image Comparer (rgthree)",
+            "PreviewTextNode",
+            "easy cleanGpuUsed"
         ):
             continue
         supported_outputs = SUPPORTED_OUTPUTS.keys()

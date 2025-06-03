@@ -705,6 +705,16 @@
     ],
     "file_size": 2502139104
   },
+
+
+
+
+
+
+
+
+
+
   "CLIP-ViT-H-14-laion2B-s32B-b79K": {
     "url": "https://hf-mirror.com/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors",
     "homepage": "https://hf-mirror.com/h94/IP-Adapter",
@@ -765,7 +775,9 @@
     "types": [
       "ipadapter"
     ],
-    "file_size": 702585376
+    "file_size": 702585376,
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
   },
   "ip-adapter-plus_sdxl_vit_h": {
     "url": "https://hf-mirror.com/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors",
@@ -780,7 +792,9 @@
     "types": [
       "ipadapter"
     ],
-    "file_size": 847517512
+    "file_size": 847517512,
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
   },
   "ip-adapter-plus_face_sdxl_vit_h": {
     "url": "https://hf-mirror.com/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus-face_sdxl_vit-h.safetensors",
@@ -795,7 +809,9 @@
     "types": [
       "ipadapter"
     ],
-    "file_size": 847517512
+    "file_size": 847517512,
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
   },
   "ip-adapter-pulid": {
     "url": "https://hf-mirror.com/huchenlei/ipadapter_pulid/resolve/main/ip-adapter_pulid_sdxl_fp16.safetensors",
@@ -812,6 +828,284 @@
     ],
     "file_size": 791372856
   },
+  "Kolors-IP-Adapter-FaceID-Plus": {
+    "homepage": "https://hf-mirror.com/Kwai-Kolors/Kolors-IP-Adapter-FaceID-Plus",
+    "url": "https://hf-mirror.com/Kwai-Kolors/Kolors-IP-Adapter-FaceID-Plus/resolve/main/ipa-faceid-plus.bin",
+    "filename": "Kolors-IP-Adapter-FaceID-Plus.bin",
+    "hash": "8af246ef794e17523e83723b8d84be598c69d78241d943f3c50e6ca263389fd8",
+    "file_size": 2566242959,
+    "types": [
+      "ipadapter"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?Kolors-IP-Adapter-FaceID-Plus\\.bin$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip-adapter-faceid-plus_sd15": {
+    "homepage": "https://hf-mirror.com/h94/IP-Adapter-FaceID",
+    "url": "https://hf-mirror.com/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plus_sd15.bin",
+    "filename": "ip-adapter-faceid-plus_sd15.bin",
+    "hash": "252fb53e0d018489d9e7f9b9e2001a52ff700e491894011ada7cfb471e0fadf2",
+    "file_size": 157000000,
+    "types": [
+      "ipadapter"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter-faceid-plus_sd15\\.bin$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip-adapter-faceid-plus_sd15_lora": {
+    "homepage": "https://hf-mirror.com/h94/IP-Adapter-FaceID",
+    "url": "https://hf-mirror.com/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plus_sd15_lora.safetensors",
+    "filename": "ip-adapter-faceid-plus_sd15_lora.safetensors",
+    "hash": "3f00341d11e5e7b5aadf63cbdead09ef82eb28669156161cf1bfc2105d4ff1cd",
+    "file_size": 51100000,
+    "types": [
+      "loras"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter-faceid-plus_sd15_lora\\.safetensors$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip-adapter-faceid-plusv2_sdxl": {
+    "homepage": "https://hf-mirror.com/h94/IP-Adapter-FaceID",
+    "url": "https://hf-mirror.com/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl.bin",
+    "filename": "ip-adapter-faceid-plusv2_sdxl.bin",
+    "hash": "c6945d82b543700cc3ccbb98d363b837e9c596281607857c74b713a876daf5fb",
+    "file_size": 14900000000,
+    "types": [
+      "ipadapter"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter-faceid-plusv2_sdxl\\.bin$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip-adapter-faceid-plusv2_sdxl_lora": {
+    "homepage": "https://hf-mirror.com/h94/IP-Adapter-FaceID",
+    "url": "https://hf-mirror.com/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-plusv2_sdxl_lora.safetensors",
+    "filename": "ip-adapter-faceid-plusv2_sdxl_lora.safetensors",
+    "hash": "f24b4bb2dad6638a09c00f151cde84991baf374409385bcbab53c1871a30cb7b",
+    "file_size": 372000000,
+    "types": [
+      "loras"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter-faceid-plusv2_sdxl_lora\\.safetensors$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip-adapter-faceid-portrait-v11_sd15": {
+    "homepage": "https://hf-mirror.com/h94/IP-Adapter-FaceID",
+    "url": "https://hf-mirror.com/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait-v11_sd15.bin",
+    "filename": "ip-adapter-faceid-portrait-v11_sd15.bin",
+    "hash": "a48cb4f89ed18e02c6000f65aa9efec452e87eaed4a1bc9fcf4a460c8d0e3bc6",
+    "file_size": 64600000,
+    "types": [
+      "ipadapter"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter-faceid-portrait-v11_sd15\\.bin$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip-adapter-faceid-portrait_sd15": {
+    "homepage": "https://hf-mirror.com/h94/IP-Adapter-FaceID",
+    "url": "https://hf-mirror.com/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sd15.bin",
+    "filename": "ip-adapter-faceid-portrait_sd15.bin",
+    "hash": "68570f3c14fe125b00d4abf416af33d8b13bb496f4e55af2eb5d0a6017ee99a4",
+    "file_size": 64600000,
+    "types": [
+      "ipadapter"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter-faceid-portrait_sd15\\.bin$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip-adapter-faceid-portrait_sdxl": {
+    "homepage": "https://hf-mirror.com/h94/IP-Adapter-FaceID",
+    "url": "https://hf-mirror.com/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sdxl.bin",
+    "filename": "ip-adapter-faceid-portrait_sdxl.bin",
+    "hash": "5631ce7824cdafd2db37c5e85b985730a95ff59c5b4fc80c2b79b0bee5711512",
+    "file_size": 750000000,
+    "types": [
+      "ipadapter"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter-faceid-portrait_sdxl\\.bin$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip-adapter-faceid-portrait_sdxl_unnorm": {
+    "homepage": "https://hf-mirror.com/h94/IP-Adapter-FaceID",
+    "url": "https://hf-mirror.com/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid-portrait_sdxl_unnorm.bin",
+    "filename": "ip-adapter-faceid-portrait_sdxl_unnorm.bin",
+    "hash": "220bb86e205393a3d0411631cb473caddbf35fd371be2905ca9008818170db55",
+    "file_size": 1010000000,
+    "types": [
+      "ipadapter"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter-faceid-portrait_sdxl_unnorm\\.bin$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip-adapter-faceid_sd15": {
+    "homepage": "https://hf-mirror.com/h94/IP-Adapter-FaceID",
+    "url": "https://hf-mirror.com/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15.bin",
+    "filename": "ip-adapter-faceid_sd15.bin",
+    "hash": "201344e22e6f55849cf07ca7a6e53d8c3b001327c66cb9710d69fd5da48a8da7",
+    "file_size": 96700000,
+    "types": [
+      "ipadapter"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter-faceid_sd15\\.bin$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip-adapter-faceid_sd15_lora": {
+    "homepage": "https://hf-mirror.com/h94/IP-Adapter-FaceID",
+    "url": "https://hf-mirror.com/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sd15_lora.safetensors",
+    "filename": "ip-adapter-faceid_sd15_lora.safetensors",
+    "hash": "70699f0dbfadd47de1f81d263cf4c86bd4b7271d841304af9b340b3a7f38e86a",
+    "file_size": 157000000,
+    "types": [
+      "loras"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter-faceid_sd15_lora\\.safetensors$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip-adapter-faceid_sdxl": {
+    "homepage": "https://hf-mirror.com/h94/IP-Adapter-FaceID",
+    "url": "https://hf-mirror.com/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl.bin",
+    "filename": "ip-adapter-faceid_sdxl.bin",
+    "hash": "f455fed24e207c878ec1e0466b34a969d37bab857c5faa4e8d259a0b4ff63d7e",
+    "file_size": 1070000000,
+    "types": [
+      "ipadapter"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter-faceid_sdxl\\.bin$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip-adapter-faceid_sdxl_lora": {
+    "homepage": "https://hf-mirror.com/h94/IP-Adapter-FaceID",
+    "url": "https://hf-mirror.com/h94/IP-Adapter-FaceID/resolve/main/ip-adapter-faceid_sdxl_lora.safetensors",
+    "filename": "ip-adapter-faceid_sdxl_lora.safetensors",
+    "hash": "4fcf93d6e8dc8dd18f5f9e51c8306f369486ed0aa0780ade9961308aff7f0d64",
+    "file_size": 37200000,
+    "types": [
+      "loras"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip-adapter-faceid_sdxl_lora\\.safetensors$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip_plus_composition_sd15": {
+    "homepage": "https://hf-mirror.com/ostris/ip-composition-adapter",
+    "url": "https://hf-mirror.com/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sd15.safetensors",
+    "filename": "ip_plus_composition_sd15.safetensors",
+    "hash": "4a02c9f4d2ade7c0e14db7471377ce5d326a2bfda7777231c79dc861c93f2c12",
+    "file_size": 98200000,
+    "types": [
+      "loras"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip_plus_composition_sd15\\.safetensors$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip_plus_composition_sdxl": {
+    "homepage": "https://hf-mirror.com/ostris/ip-composition-adapter",
+    "url": "https://hf-mirror.com/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sdxl.safetensors",
+    "filename": "ip_plus_composition_sdxl.safetensors",
+    "hash": "e92dc36cc273bac3200b2e41807ebdc174076185d95a45238558d4c236b6da74",
+    "file_size": 848000000,
+    "types": [
+      "loras"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip_plus_composition_sdxl\\.safetensors$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+  "ip_adapter_plus_general": {
+    "homepage": "https://hf-mirror.com/Kwai-Kolors/Kolors-IP-Adapter-Plus",
+    "url": "https://hf-mirror.com/Kwai-Kolors/Kolors-IP-Adapter-Plus/resolve/main/ip_adapter_plus_general.bin",
+    "filename": "ip_adapter_plus_general.bin",
+    "hash": "e92dc36cc273bac3200b2e41807ebdc174076185d95a45238558d4c236b6da74",
+    "file_size": 1010000000,
+    "types": [
+      "loras"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?ip_adapter_plus_general\\.bin$"
+      }
+    ],
+    "comfyui_plugin_git": "https://github.com/cubiq/ComfyUI_IPAdapter_plus.git",
+    "create_by": "DragonAI.vip"
+  },
+
+
+
+
+
+
   "baulab-lora-smiling": {
     "regexes": [
       {
@@ -861,17 +1155,18 @@
     "file_size": 9151707
   },
   "FLUX-VAE": {
-    "regexes": [
-      {
-        "input_value": "^(?i:ae\\.safetensors)$",
-        "input_name": "(?i)vae"
-      }
-    ],
     "url": "https://hf-mirror.com/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors",
     "homepage": "https://hf-mirror.com/black-forest-labs/FLUX.1-schnell",
     "hash": "afc8e28272cd15db3919bacdb6918ce9c1ed22e96cb12c4d5ed0fba823529e38",
+    "filename": "flux1-ae.safetensors",
     "types": [
       "vae"
+    ],
+    "regexes": [
+      {
+        "input_value": "^(?i:flux1-ae\\.safetensors)$",
+        "input_name": "(?i)vae"
+      }
     ],
     "file_size": 335304388
   },
@@ -1163,8 +1458,8 @@
         "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?shou_xin\\.safetensors$"
       }
     ],
-    "url": "https://huggingface.co/Datou1111/shou_xin/resolve/main/shou_xin.safetensors",
-    "homepage": "https://huggingface.co/Datou1111/shou_xin",
+    "url": "https://hf-mirror.com/Datou1111/shou_xin/resolve/main/shou_xin.safetensors",
+    "homepage": "https://hf-mirror.com/Datou1111/shou_xin",
     "hash": "e59714179016388dee044952d92a733f5cdf462d815be67fe87259e88fdb4703",
     "types": [
       "loras"
@@ -1453,8 +1748,8 @@
         "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?aidmaFLUXpro1\\.1\\-FLUX\\-V0\\.2\\.safetensors$"
       }
     ],
-    "url": "https://civitai.com/api/download/models/955535",
-    "homepage": "https://civitai.com/models/832683",
+    "url": "https://hf-mirror.com/leonel4rd/Aidmflux/blob/main/aidmaFLUXpro1.1-FLUX-V0.2.safetensors",
+    "homepage": "https://hf-mirror.com/leonel4rd/Aidmflux",
     "hash": "22EEBDF2AA11B67C4130ADD08ABE686C60E08900CCAC220DA499D87DAD53CBF4",
     "file_size": 76691944,
     "filename": "aidmaFLUXpro1.1-FLUX-V0.2.safetensors",
@@ -1710,7 +2005,39 @@
       }
     ],
     "create_by": "DragonAI.vip"
+  },
+
+
+
+
+
+
+
+
+  "llava-v1.6-mistral-7b.Q4_K_M": {
+    "homepage": "https://hf-mirror.com/cjpais/llava-1.6-mistral-7b-gguf",
+    "url": "https://hf-mirror.com/cjpais/llava-1.6-mistral-7b-gguf/resolve/main/llava-v1.6-mistral-7b.Q4_K_M.gguf",
+    "filename": "llava-v1.6-mistral-7b.Q4_K_M.gguf",
+    "hash": "4bd1bc95c4db74f8140ee520e76d1f83e063d3fde9c3723eaa4a4776785a7aa6",
+    "file_size": 4370000000,
+    "types": [
+      "checkpoints"
+    ],
+    "regexes": [
+      {
+        "input_value": "(?i)(?:[^\\/\\\\]*[\\/\\\\]?)?llava-v1.6-mistral-7b.Q4_K_M\\.safetensors$"
+      }
+    ],
+    "create_by": "DragonAI.vip"
   }
+
+
+
+
+
+
+
+
 
 
 
